@@ -3,19 +3,19 @@
   <div class="bg-gradient" text-center>
     <div class="login-form ion-padding">
       <h1>Login</h1>
-      <form action="">
+      <ion-list>
           <ion-item>
             <ion-label position="floating">Username</ion-label>
-            <ion-input></ion-input>
+            <ion-input [(ngModel)]="username"></ion-input>
           </ion-item> 
 
           <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input [(ngModel)]="password"></ion-input>
           </ion-item> 
 
           <ion-button color="primary">Log in</ion-button>
-      </form>
+      </ion-list>
     </div>
   </div>
 </ion-content>

@@ -2,24 +2,26 @@
      <div class="bg-gradient" text-center>
     <div class="register-form ion-padding">
       <h1>Register</h1>
-      <form action="">
+      <ion-list>
           <ion-item>
             <ion-label position="floating">Username</ion-label>
-            <ion-input></ion-input>
+            <ion-input [(ngModel)]="username"></ion-input>
           </ion-item> 
 
           <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input [(ngModel)]="password"></ion-input>
           </ion-item> 
 
           <ion-item>
               <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input [(ngModel)]="cpassword"></ion-input>
           </ion-item> 
 
           <ion-button color="primary" >Sign up</ion-button>
-      </form>
+          <!-- <a routerLink="/login">have an account ?</a> -->
+
+      </ion-list>
     </div>
   </div>
 </ion-content>
