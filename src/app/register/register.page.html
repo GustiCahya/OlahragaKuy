@@ -4,22 +4,22 @@
       <h1>Register</h1>
       <ion-list>
           <ion-item>
-            <ion-label position="floating">Username</ion-label>
-            <ion-input [(ngModel)]="username"></ion-input>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="text" [(ngModel)]="email"></ion-input>
           </ion-item> 
 
           <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input [(ngModel)]="password"></ion-input>
+              <ion-input type="password" [(ngModel)]="password"></ion-input>
           </ion-item> 
 
           <ion-item>
               <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input [(ngModel)]="cpassword"></ion-input>
+              <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
           </ion-item> 
 
-          <ion-button color="primary" >Sign up</ion-button>
-          <!-- <a routerLink="/login">have an account ?</a> -->
+          <ion-button color="primary" expand="block" (click)="register()">Sign up</ion-button>
+          <ion-button color="dark" routerLink="/login">have an account ?</ion-button>
 
       </ion-list>
     </div>
