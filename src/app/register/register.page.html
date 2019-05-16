@@ -1,27 +1,36 @@
-<ion-content>
-     <div class="bg-gradient" text-center>
-    <div class="register-form ion-padding">
-      <h1>Register</h1>
+
+<ion-content text-center>
+  <div class="bgstack" text-center></div>
+
+  <div class="center">
+    <div class="circle-avatar center" text-center>
+        <img src="" alt="">
+    </div>
+  </div>
+
+  <div style="width: 80%;margin-top: 10%;" class="center">
+    <div class="ion-padding" text-center>
+      <h2 class="sub-caption">Selamat Datang Di <b>Raga</b></h2>
       <ion-list>
-          <ion-item>
-            <ion-label position="floating">Email</ion-label>
-            <ion-input type="text" [(ngModel)]="email"></ion-input>
-          </ion-item> 
+        <ion-item mode="md">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item> 
 
-          <ion-item>
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" [(ngModel)]="password"></ion-input>
-          </ion-item> 
+        <ion-item mode="md">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item> 
 
-          <ion-item>
-              <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
-          </ion-item> 
-
-          <ion-button color="primary" expand="block" (click)="register()">Sign up</ion-button>
-          <ion-button color="dark" routerLink="/login">have an account ?</ion-button>
-
-      </ion-list>
+        <ion-item mode="md">
+            <ion-label position="floating">Ulangi Password</ion-label>
+            <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+        </ion-item> 
+        <div class="button">
+          <ion-button color="primary" mode="ios" expand="block" (click)="register()">Daftar</ion-button>
+          <ion-button color="light" expand="block" routerLink="/login">Sudah Punya akun ?</ion-button>
+        </div>
+        </ion-list>
     </div>
   </div>
 </ion-content>
