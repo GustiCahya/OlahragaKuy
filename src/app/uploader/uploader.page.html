@@ -6,4 +6,33 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>Testing</ion-content>
+<ion-content>
+  <div class="ion-padding">
+      <ion-list>
+          <ion-item mode="md">
+            <ion-label position="floating">Nama Kegiatan</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item> 
+  
+          <ion-item mode="md">
+              <ion-label position="floating">Kategori Olahraga</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item> 
+          <ion-item mode="md">
+              <ion-label position="floating">Batas Gabung</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item> 
+          <ion-item mode="md">
+              <ion-label>Tanggal / Bulan / Tahun</ion-label>
+              <ion-datetime display-format="YYYY-MM-DD" picker-format="DD MMMM YYYY"></ion-datetime>
+          </ion-item>
+          <ion-item mode="md">
+              <ion-label>Waktu</ion-label>
+              <ion-datetime display-format="HH:mm" picker-format="HH-mm"></ion-datetime>
+          </ion-item>
+          <div class="button">
+            <ion-button color="primary" mode="ios" expand="block" >Post</ion-button>
+          </div>
+          </ion-list>
+  </div>
+</ion-content>
